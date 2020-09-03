@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <title>Joy Shopping</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="home.html">Joy's Furniture</a></h1>
+        <ul>
+          <li><a class="current" href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Register</a> </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <h1><span class="text-primary">Shop</span> Now!</h1>
+          <p class="lead">Get Amazing furniture at low prices</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="features">
+    <div class="box bg-light">
+      <div class="productCard">
+        <img src="https://i2.wp.com/www.ariyonainterior.com/wp-content/uploads/2019/07/Beautiful-Dining-Table-Top-Ideas-For-All-28.jpg?resize=700%2C702&ssl=1" style="width:100%" height="250" />
+        <h1>Royal Dining Table</h1>
+        <p class="productDetails">Premium Quality</p>
+        <p>Price ₹49,999</p>
+        <p><button>Buy Now</button></p>
+      </div>
+    </div>
+    <div class="box bg-primary">
+      <div class="productCard">
+        <img src="https://www.woodenstreet.com/image/cache/data/dining-chairs/zen-dining-chair/indigo-blue/front-408x408.jpg" style="width:100%" height="250" />
+        <h1>Rosewood Chair</h1>
+        <p class="productDetails">Exotic Look</p>
+        <p>Price ₹8,499</p>
+        <p><button>Buy Now</button></p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="productCard">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/71uVFbdoxdL._SL1500_.jpg" style="width:100%" height="250" />
+        <h1>Corner shelf</h1>
+        <p class="productDetails">100% Assured Quality</p>
+        <p>Price ₹6,000</p>
+        <p><button>Buy Now</button></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="clr"></div>
+  <footer id="main-footer">
+    <p>All &copy; 2020, All Rights Reserved</p>
+  </footer>
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <div class="container">
+          <label><b>E-mail</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <br />
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br />
+          <input type="checkbox" checked="checked"> Accept Terms & Conditions
+          <br />
+          <button class="button-login" type="submit">Register</button>
+        </div>
+
+
+    </form>
+
+  </div>
+</body>
+<script>
+  var modal = document.getElementById('id01');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</html>

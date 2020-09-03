@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.text-primary {
+    color: #f7c08a;
+}
+.lead {
+    font-size: 20px;
+}
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #f7c08a;
+    color: #333333;
+}
+.btn-light {
+    background: #f4f4f4;
+    color: #333333;
+}
+
+.bg-dark {
+    background: #333333;
+    color: #ffffff;
+}
+.bg-light {
+    background: #f4f4f4;
+    color: #333333;
+}
+.bg-primary {
+    background: #f7c08a;
+    color: #333333;
+}
+.clr {
+    clear: both;
+}
+.l-heading {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+
+.py-1{
+    padding: 10px 0;
+}
+.py-2 {
+    padding: 20px 0;
+}
+.py-3 {
+    padding: 30px 0;
+}
+
+
+#navbar {
+    background: black;
+    color: #fff;
+    overflow: hidden;
+    z-index: 100;
+    max-height: 11vh;
+}
+#navbar a {
+    color: #ffffff;
+
+}
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current{
+    color: #f7c08a;
+}
+
+
+#showcase {
+    background: url('../img/showcase.jpg') no-repeat
+    center center/cover;
+    min-height: 100vh;
+}
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcase-content h1{
+    font-size: 60px;
+    line-height: 1.2em;
+}
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+
+#home_info {
+    height: 450px;
+}
+#home_info .info-img {
+    float: left;
+    width: 50%;
+    background: url("../img/photo-1.jpg") no-repeat;
+    min-height: 100%;
+}
+#home_info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+#home_info .info-content p {
+    padding-bottom: 30px;
+}
+
+
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+.box i {
+    margin-bottom: 10px;
+}
+
+/* About Info*/
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+
+
+#testimonials{
+    height: 100%;
+    background: url("../img/test-bg.jpg")no-repeat center center/cover;
+    padding-top: 100px;
+}
+#testimonials h2 {
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#testimonials .testimonial{
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+#testimonials .testimonial img{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #dddddd solid;
+}
+#contact-form textarea {
+    height: 200px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+
+#main-footer {
+    text-align: center;
+    background: black;
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+
+/*szfcdzx*/
+
+.productCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(190, 224, 224);
+}
+   .productDetails {
+      color: rgb(26, 0, 51);
+      font-weight: bold;
+      font-size: 18px;
+   }
+   button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: rgb(23, 31, 102);
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+   }
+   button:hover, a:hover {
+      opacity: 0.7;
+   }
+
+
+
+    .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px; 
+        background-color: #f44336; 
+    } 
+    
+    /*centre the display image inside the container*/ 
+    .imgcontainer { 
+        text-align: center; 
+        margin: 24px 0 12px 0; 
+        position: relative; 
+    } 
+    
+    /*set image properties*/ 
+    img.avatar { 
+        width: 40%; 
+        border-radius: 50%; 
+    } 
+    
+    /*set padding to the container*/ 
+    .container { 
+        padding: 16px; 
+    } 
+      
+    /*set the forgot password text*/ 
+    span.psw { 
+        float: right; 
+        padding-top: 16px; 
+    } 
+    
+    /*set the Modal background*/ 
+    .modal { 
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0, 0, 0); 
+        background-color: rgba(0, 0, 0, 0.4); 
+        padding-top: 60px; 
+    } 
+    
+    /*style the model content box*/ 
+    .modal-content { 
+        background-color: #fefefe; 
+        margin: 5% auto 15% auto; 
+        border: 1px solid #888; 
+        width: 80%; 
+    } 
+    
+    /*style the close button*/ 
+    .close { 
+        position: absolute; 
+        right: 25px; 
+        top: 0; 
+        color: #000; 
+        font-size: 35px; 
+        font-weight: bold; 
+    } 
+      
+    .close:hover, 
+    .close:focus { 
+        color: red; 
+        cursor: pointer; 
+    } 
+    
+    /* add zoom animation*/ 
+    .animate { 
+        -webkit-animation: animatezoom 0.6s; 
+        animation: animatezoom 0.6s 
+    } 
+      
+    @-webkit-keyframes animatezoom { 
+        from { 
+            -webkit-transform: scale(0) 
+        } 
+        to { 
+            -webkit-transform: scale(1) 
+        } 
+    } 
+      
+    @keyframes animatezoom { 
+        from { 
+            transform: scale(0) 
+        } 
+        to { 
+            transform: scale(1) 
+        } 
+    } 
+      
+    @media screen and (max-width: 300px) { 
+        span.psw { 
+            display: block; 
+            float: none; 
+        } 
+        .cancelbtn { 
+            width: 100%; 
+        } 
+    } 
+        /*assign full width inputs*/ 
+    input[type=text], 
+    input[type=password] { 
+        width: 50%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+
+
+    .button-login { 
+        color: white; 
+        padding: 7px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: inherit; 
+    } 
+    
+    /* set a hover effect for the button*/ 
+    .button-login:hover { 
+        opacity: 0.8; 
+    } 

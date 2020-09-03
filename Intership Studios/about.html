@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Welcome to the most extraordinary Hotel In Colombia">
+  <meta name="keywords" content="Hotel, Colombia, Hotel in Colombia, New Colombia Hotel">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <title>Joy's Furniture | About</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="home.html">Joy's Furniture</a></h1>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a class="current" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Register</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="about-info" class="bg-light py-3">
+    <div class="container">
+      <div class="info-left">
+        <h1 class="l-heading"><span class="text-primary">About</span> Our Enterprise</h1>
+        <p>Joy's furniture, home furnishings retailer that was the world's largest seller of furniture in the early 21st century, operating more than 300 stores around the world. Joy's furniture specializes in low-priced goods, sold whenever possible
+          in compact “flat-pack” form for in-home assembly by the customer.</p>
+
+      </div>
+      <div class="info-right">
+        <img src="./img/photo-1.jpg" width="150" height="250">
+      </div>
+    </div>
+  </section>
+
+  <div class="clr"></div>
+  <section id="testimonials" class="py-3">
+    <div class="container">
+      <h2 class="l-heading">What Our Customers Say</h2>
+      <div class="testimonial bg-primary">
+        <p>Amazing place to purchase furniture.<br /> Thanks for the great platform.</p>
+        <br />
+        <p>- Riya</p>
+      </div>
+
+      <div class="testimonial bg-primary">
+        <p>Easy returns! Easy payments!</p>
+        <br />
+        <p>- Jagan</p>
+      </div>
+    </div>
+  </section>
+  <div class="clr"></div>
+  <footer id="main-footer">
+    <p>All &copy; 2019, All Rights Reserved</p>
+  </footer>
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <div class="container">
+          <label><b>E-mail</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <br />
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br />
+          <input type="checkbox" checked="checked"> Accept Terms & Conditions
+          <br />
+          <button class="button-login" type="submit">Login</button>
+        </div>
+
+
+    </form>
+
+  </div>
+</body>
+
+</html>
